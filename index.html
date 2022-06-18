@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Music Player</title>
+    <script src="https://kit.fontawesome.com/72ad748550.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-section">
+            <span class="btn top-section__icon material-symbols-outlined">
+                keyboard_arrow_down
+            </span>
+            <span class="top-section__title">Now Playing</span>
+            <span class="btn top-section__icon material-symbols-outlined">
+                more_horiz
+            </span>
+        </div>
+        <div class="song-img">
+            <img src="" alt="song image" class="song-img__img">
+        </div>
+        <div class="song-details">
+            <p class="song-details__name"></p>
+            <p class="song-details__artist"></p>
+        </div>
+        <div class="song-progress">
+            <div class="song-progress__bar">
+            </div>
+            <audio src="" class="current-audio"></audio>
+        </div>
+        <div class="song-progress__timer">
+            <span class="song-progress__timer--current">0:00</span>
+            <span class="song-progress__timer--duration">03:54</span>
+        </div>
+        <div class="controls">
+            <span class="btn controls__btn--repeat material-symbols-outlined" title="Playlist looped">
+                repeat
+            </span>
+            <span class="btn controls__btn--prev material-symbols-outlined">
+                skip_previous
+            </span>
+            <div class="controls__pause">
+                <span class="btn controls__btn--pause material-symbols-outlined paused">
+                    play_arrow
+                </span>
+            </div>
+            <span class="btn controls__btn--next material-symbols-outlined">
+                skip_next
+            </span>
+            <span class="btn controls__btn--songs-list material-symbols-outlined">
+                queue_music
+            </span>
+        </div>
+    </div>
+
+    <script src="js/music_list.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
